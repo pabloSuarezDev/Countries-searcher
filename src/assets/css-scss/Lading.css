@@ -1,0 +1,36 @@
+main { 
+  width: 90%;
+  min-height: 100vh;
+  margin: auto;
+  padding-top: 2.5rem;
+}
+
+main section.regions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3.5rem;
+}
+
+main section.regions div.card { 
+  width: 18rem;
+  border: none;
+  transition: all .3s;
+  box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.225);
+  cursor: pointer;
+} 
+
+main section.regions div.card:hover { box-shadow: 0 0 .5rem .1rem rgba(0, 0, 0, 0.225); } 
+
+main section.regions div.card img.card__img {
+  width: 100%;
+  height: 192px;
+  user-select: none;
+}
+
+main section.regions div.loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: black;
+}

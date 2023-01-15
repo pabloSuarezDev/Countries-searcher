@@ -1,0 +1,84 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+
+  form {
+    display: flex;
+    justify-content: start;
+    flex-direction: row-reverse;
+    width: 400px;
+    box-shadow: 0 0 .5rem .1rem rgba(0, 0, 0, 0.225);
+
+    input,
+    button {
+      border: none;
+    }
+
+    input {
+      padding: 1rem;
+      outline: none;
+    
+      &::placeholder {
+        font-weight: 600;
+      }
+    }
+
+    button {
+      padding-left: 2rem;
+      background-color: white;
+    }
+  }
+
+  div.filter {
+    position: relative;
+    z-index: 1;
+    width: 175px;
+    padding: 1rem;
+    box-shadow: 0 0 .5rem .1rem rgba(0, 0, 0, 0.225);
+    cursor: pointer;
+  
+    span, ul  { 
+      width: 100%;
+      user-select: none;
+    }
+
+    ul { 
+      position: absolute; 
+      top: 4rem;
+      overflow: auto;
+      margin: auto;
+      padding: 1rem;
+      font-weight: 600;
+      line-height: 2.5rem;
+      list-style: none;
+      background-color: #FAFAFA;
+      margin-left: -1rem;
+      box-shadow: 0 .5rem .5rem .1rem rgba(0, 0, 0, 0.225);
+
+      li {
+        width: 100%;
+        padding:  .5rem;
+        transition: all .3s;
+
+        &:hover { background-color: #eee; }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-bottom: 3rem;
+  }
+}
+
+
+@media screen and (max-width: 445px) {
+  nav form {
+    width: 100%;
+  }
+}

@@ -1,0 +1,104 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+nav form.search.content__dark-mode {
+  background-color: rgb(24, 32, 32);
+}
+nav form {
+  display: flex;
+  justify-content: start;
+  flex-direction: row-reverse;
+  width: 400px;
+  box-shadow: 0 0 0.5rem 0.1rem rgba(0, 0, 0, 0.225);
+}
+nav form input,
+nav form button {
+  border: none;
+}
+nav form input.search.content__dark-mode, nav form button.search.content__dark-mode {
+  background-color: rgb(24, 32, 32);
+}
+nav form input.search.content__dark-mode::-moz-placeholder, nav form button.search.content__dark-mode::-moz-placeholder {
+  color: white;
+}
+nav form input.search.content__dark-mode:-ms-input-placeholder, nav form button.search.content__dark-mode:-ms-input-placeholder {
+  color: white;
+}
+nav form input.search.content__dark-mode::placeholder, nav form button.search.content__dark-mode::placeholder {
+  color: white;
+}
+nav form input {
+  padding: 1rem;
+  outline: none;
+}
+nav form input::-moz-placeholder {
+  font-weight: 600;
+}
+nav form input:-ms-input-placeholder {
+  font-weight: 600;
+}
+nav form input::placeholder {
+  font-weight: 600;
+}
+nav form button {
+  padding-left: 2rem;
+  background-color: white;
+}
+nav div.filter.content__dark-mode, nav ul.filter.content__dark-mode {
+  background-color: rgb(24, 32, 32);
+}
+nav ul.filter.content__dark-mode li:hover {
+  background-color: rgba(0, 0, 0, 0.388);
+}
+nav div.filter {
+  position: relative;
+  z-index: 1;
+  width: 175px;
+  padding: 1rem;
+  box-shadow: 0 0 0.5rem 0.1rem rgba(0, 0, 0, 0.225);
+  cursor: pointer;
+}
+nav div.filter span, nav div.filter ul {
+  width: 100%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+nav div.filter ul {
+  position: absolute;
+  top: 4rem;
+  overflow: auto;
+  margin: auto;
+  padding: 1rem;
+  font-weight: 600;
+  line-height: 2.5rem;
+  list-style: none;
+  background-color: #FAFAFA;
+  margin-left: -1rem;
+  box-shadow: 0 0.5rem 0.5rem 0.1rem rgba(0, 0, 0, 0.225);
+}
+nav div.filter ul li {
+  width: 100%;
+  padding: 0.5rem;
+  transition: all 0.3s;
+}
+nav div.filter ul li:hover {
+  background-color: #eee;
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-bottom: 3rem;
+  }
+}
+@media screen and (max-width: 445px) {
+  nav form {
+    width: 100%;
+  }
+}/*# sourceMappingURL=Nav.css.map */
