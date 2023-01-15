@@ -1,2 +1,4 @@
 # Countries-searcher
-Countries searcher using Rest Countries API
+Developed with Rest Countries API -> https://restcountries.com
+
+This web was developed with the Javascript framework ReactJS
